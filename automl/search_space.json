@@ -65,7 +65,7 @@
         "_value":[true]},
     "bert_model_name":{
         "_type":"choice",
-        "_value":["/haotianshuv/caoyong/pretrained_model/bert-base-german-dbmdz-uncased/"]},
+        "_value":["/hy-tmp/SLT2/bert-base-german-dbmdz-uncased/"]},
     "bert_ratio":{
         "_type":"choice",
         "_value":[0.0, 0.1, 0.2, 0.15]},

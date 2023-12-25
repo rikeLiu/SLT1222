@@ -17,6 +17,6 @@ tuner:
     #choice: maximize, minimize
     optimize_mode: maximize
 trial:
-  command: CUDA_VISIBLE_DEVICES=0 python3 ./../trainer/train_pipeline.py  /hy-tmp/SLT2/dataset/processed/ph14_200/
+  command: CUDA_VISIBLE_DEVICES=0 python3 /hy-tmp/SLT2/trainer/train_pipeline.py  /hy-tmp/SLT2/dataset/processed/ph14_200/
   codeDir: .
   gpuNum: 0

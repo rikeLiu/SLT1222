@@ -8,7 +8,9 @@
 """
 Data pre-processing: build vocabularies and binarize training data.
 """
-
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from collections import Counter
 from itertools import zip_longest
 
@@ -17,7 +19,7 @@ from fairseq.data import indexed_dataset
 from fairseq.binarizer import Binarizer
 from multiprocessing import Pool
 from transformers import PreTrainedTokenizer, AutoTokenizer
-import os
+
 import shutil
 
 

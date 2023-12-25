@@ -158,7 +158,8 @@ class TransformerModel(FairseqEncoderDecoderModel):
                 tgt_dict, args.decoder_embed_dim, args.decoder_embed_path
             )
         bertencoder = AutoModel.from_pretrained(args.bert_model_name)
-        args.bert_out_dim = bertencoder.hidden_size
+        #args.bert_out_dim = bertencoder.hidden_size
+        args.bert_out_dim = bertencoder.config.hidden_size
         encoder = cls.build_encoder(args, src_dict, encoder_embed_tokens)
         decoder = cls.build_decoder(args, tgt_dict, decoder_embed_tokens)
 

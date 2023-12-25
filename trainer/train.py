@@ -10,7 +10,7 @@ Train a new model on one or across multiple GPUs.
 """
 
 import sys
-sys.path.append("/haotianshuv/caoyong/temp/be-slt/")
+sys.path.append("/hy-tmp/SLT2/")
 import collections
 import math
 import os

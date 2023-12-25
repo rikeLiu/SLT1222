@@ -7,9 +7,9 @@ import shutil
 ################# Configuration  ####################
 source_language = "gloss"
 target_language = "de"
-source_path = "./../dataset/raw/ph14_stmc"
-destdir = "./../dataset/processed/ph14_stmc"
-bert_model_path = "/haotianshuv/caoyong/pretrained_model/bert-base-german-dbmdz-uncased/"
+source_path = "./../dataset/raw/ph14_200"
+destdir = "./../dataset/processed/ph14_200b"
+bert_model_path = "/hy-tmp/SLT2/bert-base-german-dbmdz-uncased/"
 ################# End Configuration  ################
 
 index = ["python preprocess.py", "--source-lang", source_language, "--target-lang", target_language, "--trainpref",
